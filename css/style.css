@@ -1,0 +1,42 @@
+.header {
+    padding: 80px; /* some padding */
+    text-align: center; /* center the text */
+  }
+  
+  /* Increase the font size of the <h1> element */
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  body {
+    background-color: #FFE1E1;
+    font-family: "Navigo", sans-serif;
+    color:#8F312D;
+  }
+ 
+  .button {
+    transition-duration: 0.4s;
+  }
+  
+  .button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  .parallax {
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    font-size: 200%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+  
+  .parallax__group {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+ 
