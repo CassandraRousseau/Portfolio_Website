@@ -1,0 +1,362 @@
+.header {
+    text-align: center; /* center the text */
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+  }
+  
+  /* Increase the font size of the <h1> element */
+  h1 {
+    font-size: 170px;
+    text-align: center; /* center the text */
+  }
+  
+  body {
+    background-color: #FFE1E1;
+    font-family: "Navigo", sans-serif;
+    color:#8F312D;
+  }
+ 
+  .grid-container{
+    display: inline-grid;
+    text-align: center;
+    grid-template-columns: auto auto;
+  }
+  .button01 {
+    background-color: #2C1913;
+    font-size: 100px;
+    color: white;
+    transition-duration: 0.4s;
+    border:none;
+    padding: 150px;
+    text-decoration: none;
+    cursor: pointer;
+    opacity:1;
+  }
+  
+  .button01:hover {
+    opacity: 0.6;
+   background-image:url("../images/corps-en-mouvement.jpg");
+   background-size:contain;
+  }
+
+  .button02 {
+    background-color: #2C1913;
+    font-size: 100px;
+    color: white;
+    transition-duration: 0.4s;
+    border:none;
+    padding: 150px;
+    text-decoration: none;
+    cursor: pointer;
+    opacity:1;
+  }
+  
+  .button02:hover {
+    opacity: 0.6;
+   background-image:url("../images/nails.JPG");
+   background-size:contain;
+  }
+  .button03 {
+    background-color: #2C1913;
+    font-size: 100px;
+    color: white;
+    transition-duration: 0.4s;
+    border:none;
+    padding: 150px;
+    text-decoration: none;
+    cursor: pointer;
+    opacity:1;
+  }
+  
+  .button03:hover {
+    opacity: 0.6;
+   background-image:url("../images/body-product.jpg");
+   background-size:contain;
+  }
+  .button04 {
+    background-color: #2C1913;
+    font-size: 100px;
+    color: white;
+    transition-duration: 0.4s;
+    border:none;
+    padding: 150px;
+    text-decoration: none;
+    cursor: pointer;
+    opacity:1;
+  }
+  
+  .button04:hover {
+    opacity: 0.6;
+   background-image:url("../images/parc-delaisse.jpg");
+   background-size:contain;
+  }
+  
+  .buttonMenu {
+    background-color:#6E5750;
+    font-size: 50px;
+    width:50%;
+    color:white;
+    transition-duration: 0.4s;
+    border:none;
+    padding: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    opacity:1;
+  }
+  
+  .buttonMenu:hover {
+    opacity: 0.6;
+   
+  }
+  .parallax {
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    font-size: 200%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+  
+  .parallax__group {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  .footer {
+    padding: 25px; /* some padding */
+    text-align: center; /* center the text */
+  }
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50%; /* Location of the box */
+  padding-bottom: 50%; /* Location of the box */
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  top: 100%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(42, 68, 84, 0.75); /*bg colour + opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #f7f3ff;
+  margin: auto;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 16px;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* The Close Button */
+.close2 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close3 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* The Close Button */
+.close4 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close4:hover,
+.close4:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* The Close Button */
+.close5 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close5:hover,
+.close5:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Rise pop-up window header */
+.modal-rise-header {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 16px;
+  background-color: #4bf2f2;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 25px;
+  color: white;
+}
+/* Fall pop-up window header */
+.modal-fall-header {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-bottom: 16px;
+  background-color: #ff44d4;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 25px;
+  color: white;
+}
+/* pop-up window body */
+.modal-body {
+  padding: 2px 16px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #2a4454;
+}
+/* Edit buttons */
+#myBtn {
+  background-image: url("../images/top8.jpg");
+  background-position: center;
+  background-size: 220px 190px;
+  border: none;
+  padding: 80px 80px;
+  display: inline-block;
+  margin: 4px 4px;
+  cursor: pointer;
+  transition-duration: 0.6s;
+}
+
+#myBtn:hover {
+  opacity: 45%;
+}
+#myBtn2 {
+  border: none;
+  background-image: url("../images/internetcelebrities.jpg");
+  background-position: top;
+  background-size: 310px 210px;
+  border: none;
+  padding: 80px 80px;
+  display: inline-block;
+  margin: 4px 4px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+#myBtn2:hover {
+  opacity: 45%;
+}
+#myBtn3 {
+  background-image: url("../images/customization.jpg");
+  background-position: center;
+  background-size: 220px 190px;
+  border: none;
+  padding: 80px 80px;
+  display: inline-block;
+  margin: 4px 4px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+#myBtn3:hover {
+  opacity: 45%;
+}
+#myBtn4 {
+  background-image: url("../images/edited_samyworm.jpg");
+  background-position: center;
+  background-size: 220px 190px;
+  border: none;
+  padding: 80px 80px;
+  display: inline-block;
+  margin: 4px 4px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+#myBtn4:hover {
+  opacity: 45%;
+}
+#myBtn5 {
+  background-image: url("../images/edited_myspace_case.jpg");
+  background-position: center;
+  background-size: 220px 190px;
+  border: none;
+  padding: 80px 80px;
+  display: inline-block;
+  margin: 4px 4px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+#myBtn5:hover {
+  opacity: 45%;
+}

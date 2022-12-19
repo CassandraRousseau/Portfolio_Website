@@ -2,7 +2,7 @@
     <title>Animation</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/PageStyle.css" />
+    <link rel="stylesheet" href="../css/PageStyleDesign.css" />
     <h1>Cassandra Rousseau</h1>
     <div class="header">
       <button class="buttonMenu" onclick="window.location.href='../index.html'">Home Page</button>
@@ -10,11 +10,145 @@
     </head>
     <body>
         <div class="grid-container">
-        <button class="button" onclick="window.location.href='Pages/animation.html'">FMRL</button>
-        <button class="button" onclick="window.location.href='Pages/dance.html'">Do you Remember MYSPACE?</button>
-        <button class="button" onclick="window.location.href='Pages/dance.html'">My Body is not a Product!</button>
-        <button class="button" onclick="window.location.href='Pages/dance.html'">Self</button>
+        <button class="button01" onclick="window.location.href='Pages/animation.html'">FMRL</button>
+        <button class="button02" onclick="window.location.href='Pages/dance.html'">Do you Remember MYSPACE?</button>
+        <button class="button03" onclick="window.location.href='Pages/dance.html'">My Body is not a Product!</button>
+        <button class="button04" onclick="window.location.href='Pages/dance.html'">Self</button>
       </div>
+      <button id="myBtn4"></button>
+    <!-- Pop-up windows -->
+    <div id="myModal4" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-fall-header">
+          <span class="close4">&times;</span>
+          <h2>SamyWorm</h2>
+        </div>
+        <div class="modal-body">
+          <p>
+            <br />
+            In October 2005, nineteen-year old Samy Kamkar discovered a
+            vital security problem on Myspace. Seeking to exploit this flaw
+            as a joke, Kamkar created a worm – a virus that replicates
+            itself, automatically spreading through a network. It wasn’t
+            malicious; originally meant to be a joke among friends, the
+            soon-to-be-dubbed Samy worm added users who visited his profile
+            as his friend, added a tag to their page saying, “but most of
+            all, Samy is my hero”, and replicated the code onto the victim’s
+            page, therefore continuing the distribution of the worm.
+
+            <br /><br />
+            In less than 24 hours, the Samy worm infected over 1,000,000
+            accounts, completely shutting down the website, and soon
+            becoming the fastest spreading virus of all time.
+            <br /><br />
+
+            <i
+              >...but popularity begets popularity. I need some more
+              friends. I need people to love me. I delved into the bug and
+              found that I could basically control the web browsing of
+              anyone who hit my profile. In fact, I was able to develop
+              something that caused anyone who viewed my profile to add my
+              name to their profile's list of heroes. It's villainous. I was
+              ecstatic. <br /><br />
+              But it wasn't enough. I needed more. So I went deeper. A
+              Chipotle burrito bol and a few clicks later, anyone who viewed
+              my profile who wasn't already on my friends list would
+              inadvertently add me as a friend. Without their permission. I
+              had conquered myspace. Veni, vidi, vici.
+              <br /><br />
+              But it wasn't enough.</i
+            >
+            <br />
+            <br />
+            <a href=" https://samy.pl/myspace/">-Samy kamkar’s blog</a>
+
+            <br /><br />
+            The Samy worm was born from arrogance and egotism. Though
+            seemingly innocent, it identified and exploited the major
+            problems with the Myspace interface, ultimately leading to its
+            downfall.
+          </p>
+        </div>
+      </div>
+    </div>
+      <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modal2 = document.getElementById("myModal2");
+        var modal3 = document.getElementById("myModal3");
+        var modal4 = document.getElementById("myModal4");
+  
+        // Get the button that opens the modal
+        var btn = document.getElementById("button01");
+        var btn2 = document.getElementById("button02");
+        var btn3 = document.getElementById("button03");
+        var btn4 = document.getElementById("button04");
+  
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        var span2 = document.getElementsByClassName("close2")[0];
+        var span3 = document.getElementsByClassName("close3")[0];
+        var span4 = document.getElementsByClassName("close4")[0];
+  
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+          modal.style.display = "block";
+        };
+  
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+          modal.style.display = "none";
+        };
+  
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        };
+        // When the user clicks the button, open the modal
+        btn2.onclick = function () {
+          modal2.style.display = "block";
+        };
+  
+        // When the user clicks on <span> (x), close the modal
+        span2.onclick = function () {
+          modal2.style.display = "none";
+        };
+  
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+          if (event.target == modal2) {
+            modal2.style.display = "none";
+          }
+        };
+        // When the user clicks the button, open the modal
+        btn3.onclick = function () {
+          modal3.style.display = "block";
+        };
+  
+        // When the user clicks on <span> (x), close the modal
+        span3.onclick = function () {
+          modal3.style.display = "none";
+        };
+  
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+          if (event.target == modal3) {
+            modal3.style.display = "none";
+          }
+        };
+        // When the user clicks the button, open the modal
+        btn4.onclick = function () {
+          modal4.style.display = "block";
+        };
+  
+        // When the user clicks on <span> (x), close the modal
+        span4.onclick = function () {
+          modal4.style.display = "none";
+        };
+      </script>
       </body>
     <footer>
      
