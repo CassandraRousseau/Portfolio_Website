@@ -131,232 +131,134 @@
     text-align: center; /* center the text */
   }
   /* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: absolute; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 50%; /* Location of the box */
-  padding-bottom: 50%; /* Location of the box */
-  left: 0%;
-  right: 0%;
+/* The popup form - hidden by default */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0%;
   bottom: 0%;
-  top: 100%;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(42, 68, 84, 0.75); /*bg colour + opacity */
+  right: 25%;
+  left:25%;
+  width:100%;
+  height:100%;
 }
 
-/* Modal Content */
-.modal-content {
+/* Add styles to the form container */
+.form-container {
+  width:50%;
+  background-color: white;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display:block;
+  width:50%;
+  height:75%;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
   position: relative;
-  background-color: #f7f3ff;
-  margin: auto;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 16px;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s;
 }
 
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-/* The Close Button */
-.close2 {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close2:hover,
-.close2:focus {
-  color: #000;
-  text-decoration: none;
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
   cursor: pointer;
 }
 
-/* The Close Button */
-.close3 {
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
   color: white;
-  float: right;
-  font-size: 28px;
   font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-.close3:hover,
-.close3:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-/* The Close Button */
-.close4 {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.close4:hover,
-.close4:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-/* The Close Button */
-.close5 {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.close5:hover,
-.close5:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
-/* Rise pop-up window header */
-.modal-rise-header {
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 10px;
-  padding-bottom: 16px;
-  background-color: #4bf2f2;
-  font-family: "Press Start 2P", sans-serif;
-  font-size: 25px;
-  color: white;
-}
-/* Fall pop-up window header */
-.modal-fall-header {
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 10px;
-  padding-bottom: 16px;
-  background-color: #ff44d4;
-  font-family: "Press Start 2P", sans-serif;
-  font-size: 25px;
-  color: white;
-}
-/* pop-up window body */
-.modal-body {
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
   padding: 2px 16px;
-  font-family: "Montserrat Alternates", sans-serif;
-  color: #2a4454;
-}
-/* Edit buttons */
-#myBtn {
-  background-image: url("../images/top8.jpg");
-  background-position: center;
-  background-size: 220px 190px;
-  border: none;
-  padding: 80px 80px;
-  display: inline-block;
-  margin: 4px 4px;
-  cursor: pointer;
-  transition-duration: 0.6s;
+  color: white;
 }
 
-#myBtn:hover {
-  opacity: 45%;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-#myBtn2 {
-  border: none;
-  background-image: url("../images/internetcelebrities.jpg");
-  background-position: top;
-  background-size: 310px 210px;
-  border: none;
-  padding: 80px 80px;
-  display: inline-block;
-  margin: 4px 4px;
-  cursor: pointer;
-  transition-duration: 0.4s;
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
 }
-#myBtn2:hover {
-  opacity: 45%;
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
 }
-#myBtn3 {
-  background-image: url("../images/customization.jpg");
-  background-position: center;
-  background-size: 220px 190px;
-  border: none;
-  padding: 80px 80px;
-  display: inline-block;
-  margin: 4px 4px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-}
-#myBtn3:hover {
-  opacity: 45%;
-}
-#myBtn4 {
-  background-image: url("../images/edited_samyworm.jpg");
-  background-position: center;
-  background-size: 220px 190px;
-  border: none;
-  padding: 80px 80px;
-  display: inline-block;
-  margin: 4px 4px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-}
-#myBtn4:hover {
-  opacity: 45%;
-}
-#myBtn5 {
-  background-image: url("../images/edited_myspace_case.jpg");
-  background-position: center;
-  background-size: 220px 190px;
-  border: none;
-  padding: 80px 80px;
-  display: inline-block;
-  margin: 4px 4px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-}
-#myBtn5:hover {
-  opacity: 45%;
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
