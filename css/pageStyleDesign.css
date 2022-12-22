@@ -36,7 +36,7 @@
   
   .button01:hover {
     opacity: 0.6;
-   background-image:url("../images/corps-en-mouvement.jpg");
+   background-image:url("../images/fmrl01.PNG");
    background-size:contain;
   }
 
@@ -54,7 +54,7 @@
   
   .button02:hover {
     opacity: 0.6;
-   background-image:url("../images/nails.JPG");
+   background-image:url("../images/myspace01.PNG");
    background-size:contain;
   }
   .button03 {
@@ -88,7 +88,7 @@
   
   .button04:hover {
     opacity: 0.6;
-   background-image:url("../images/parc-delaisse.jpg");
+   background-image:url("../images/self.jpg");
    background-size:contain;
   }
   
@@ -130,7 +130,7 @@
     padding: 25px; /* some padding */
     text-align: center; /* center the text */
   }
-  /* The Modal (background) */
+  
 /* The popup form - hidden by default */
 .popup {
   display: none;
@@ -176,13 +176,8 @@
 
 img {
   display:block;
-  width:50%;
-  height:75%;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
+  width:100%;
+  height: 80%;
 }
 
 /* Hide the images by default */
@@ -214,7 +209,7 @@ img {
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 50%;
   border-radius: 3px 0 0 3px;
 }
 
@@ -236,6 +231,8 @@ img {
 /* Container for image text */
 .caption-container {
   text-align: center;
+  width:100%;
+  height:5%;
   background-color: #222;
   padding: 2px 16px;
   color: white;
