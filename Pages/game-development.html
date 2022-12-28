@@ -10,17 +10,199 @@
     </head>
     <body>
         <div class="grid-container">
-        <button class="button" onclick="window.location.href='Pages/animation.html'">Ephemeral</button>
-        <button class="button" onclick="window.location.href='Pages/dance.html'">Here Comes Quacky!</button>
-        <button class="button" onclick="window.location.href='Pages/design.html'">Coffeeccino</button>
-        <button class="button" onclick="window.location.href='Pages/drawing.html'">Flufluf</button>
-        <button class="button" onclick="window.location.href='Pages/game-development.html'">Virtual Zoo</button>
-        <button class="button" onclick="window.location.href='Pages/painting.html'">Scenes from 74 Years</button>
-        <button class="button" onclick="window.location.href='Pages/video.html'">Video</button>
-        <button class="button" onclick="window.location.href='Pages/performance.html'">Performance</button>
-        <button class="button" onclick="window.location.href='Pages/photography.html'">Photography</button>
-        <button class="button" onclick="window.location.href='Pages/sculpting.html'">Sculpting</button>
+        <button class="button" onclick="openForm01()">Ephemeral</button>
+        <button class="button" onclick="openForm02()">Here Comes Quacky!</button>
+        <button class="button" onclick="openForm03()">Coffeeccino</button>
+        <button class="button" onclick="openForm04()">Flufluf</button>
+        <button class="button" onclick="openForm05()">Virtual Zoo</button>
+        <button class="button" onclick="openForm06()">Scenes from 74 Years</button>
       </div>
+      <div class="popup" id="myForm01">
+        <form action="/action_page.php" class="form-container">
+          <button type="button" class="btn cancel" onclick="closeForm01()">Close</button>
+          <p>Final project made during the course CART214. The fictional game menu was made based on a game project I made during the course CART253.</p>
+            <div class="mySlides">
+              <div class="numbertext">5 / 5</div>
+              <video width="100%" controls>
+                <source src="../images/ephemeral.mp4" type="video/mp4">
+              </video>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </form>
+            </div>
+        </div>
+      <div class="popup" id="myForm02">
+        <form action="/action_page.php" class="form-container">
+          <button type="button" class="btn cancel" onclick="closeForm02()">Close</button>
+          <p>Final project made during the course CART211. Based on the video Do You Remember MYSPACE? watched throughout the semester. Worked on web design, graphic design and coding.</p>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <video width="100%" controls>
+                <source src="../images/here-comes-quacky.mp4" type="video/mp4">
+              </video>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </form>
+            </div>
+        </div>
+      <div class="popup" id="myForm03">
+        <form action="/action_page.php" class="form-container">
+          <button type="button" class="btn cancel" onclick="closeForm03()">Close</button>
+          <p>Poster project made during the course CART214. The poster claims women’s objectification in society and promotes the independence of their bodies.</p>
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <video width="100%" controls>
+              <source src="../images/coffeeccino.mp4" type="video/mp4">
+            </video>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        </form>
+          </div>
+      </div>
+      <div class="popup" id="myForm02">
+        <form action="/action_page.php" class="form-container">
+          <button type="button" class="btn cancel" onclick="closeForm02()">Close</button>
+          <p>Final project made during the course CART211. Based on the video Do You Remember MYSPACE? watched throughout the semester. Worked on web design, graphic design and coding.</p>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <video width="100%" controls>
+                <source src="../images/flufluf.mp4" type="video/mp4">
+              </video>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </form>
+            </div>
+        </div>
+        <div class="popup" id="myForm02">
+          <form action="/action_page.php" class="form-container">
+            <button type="button" class="btn cancel" onclick="closeForm02()">Close</button>
+            <p>Final project made during the course CART211. Based on the video Do You Remember MYSPACE? watched throughout the semester. Worked on web design, graphic design and coding.</p>
+              
+              <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <video width="100%" controls>
+                  <source src="../images/.mp4" type="video/mp4">
+                </video>
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+            </form>
+              </div>
+          </div>
+      <div class="popup" id="myForm02">
+        <form action="/action_page.php" class="form-container">
+          <button type="button" class="btn cancel" onclick="closeForm02()">Close</button>
+          <p>Final project made during the course CART211. Based on the video Do You Remember MYSPACE? watched throughout the semester. Worked on web design, graphic design and coding.</p>
+          <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="../images/scenes-from-74-years02.PNG" alt="The Woods">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="../images/scenes-from-74-years03.PNG">
+          </div>
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <video width="100%" controls>
+                <source src="../images/scenes-from-74-years.mp4" type="video/mp4">
+              </video>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </form>
+            </div>
+        </div>
+        
+      <script>
+        function openForm01() {
+          document.getElementById("myForm01").style.display = "block";
+        }
+        
+        function closeForm01() {
+          document.getElementById("myForm01").style.display = "none";
+        }
+        function openForm02() {
+          document.getElementById("myForm02").style.display = "block";
+        }
+        
+        function closeForm02() {
+          document.getElementById("myForm02").style.display = "none";
+        }
+        function openForm03() {
+          document.getElementById("myForm03").style.display = "block";
+        }
+        
+        function closeForm03() {
+          document.getElementById("myForm03").style.display = "none";
+        }
+        function openForm04() {
+          document.getElementById("myForm04").style.display = "block";
+        }
+        
+        function closeForm04() {
+          document.getElementById("myForm04").style.display = "none";
+        }
+
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+        </script>
       </body>
     <footer>
     

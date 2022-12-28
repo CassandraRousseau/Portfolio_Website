@@ -10,25 +10,449 @@
     </head>
     <body>
         <div class="grid-container">
-          <button class="button01" onclick="window.location.href='Pages/sculpting.html'">Autoportrait</button>
-          <button class="button02" onclick="window.location.href='Pages/photography.html'">Femme en violet</button>
-          <button class="button03" onclick="window.location.href='Pages/game-development.html'">Imagination Abyss</button>
-          <button class="button04" onclick="window.location.href='Pages/drawing.html'">Inner Peace</button>
-          <button class="button05" onclick="window.location.href='Pages/sculpting.html'">Main</button>
-          <button class="button06" onclick="window.location.href='Pages/performance.html'">Modèles au repos</button>
-          <button class="button07" onclick="window.location.href='Pages/sculpting.html'">Modèles colorés</button>
-          <button class="button08" onclick="window.location.href='Pages/sculpting.html'">Modèle posée</button>
-          <button class="button09" onclick="window.location.href='Pages/video.html'">Objet Vivant</button>
-          <button class="button10" onclick="window.location.href='Pages/sculpting.html'">Ombre d'un modèle</button>
-        <button class="button11" onclick="window.location.href='Pages/animation.html'"> Out of the Frame</button>
-        <button class="button12" onclick="window.location.href='Pages/painting.html'">Posing</button>
-        <button class="button13" onclick="window.location.href='Pages/sculpting.html'">Recroquevillement</button>
-        <button class="button14" onclick="window.location.href='Pages/design.html'">Silent Loneliness</button>
-        <button class="button15" onclick="window.location.href='Pages/sculpting.html'">Tambourin</button>
-        <button class="button16" onclick="window.location.href='Pages/sculpting.html'">Visage en facettes</button>
-        <button class="button17" onclick="window.location.href='Pages/sculpting.html'">Visite des ruines</button>
-        <button class="button18" onclick="window.location.href='Pages/dance.html'">Warmth and Wonder</button>
+          <button class="button01" onclick="openForm01()">Autoportrait</button>
+          <button class="button02" onclick="openForm02()">Femme en violet</button>
+          <button class="button03" onclick="openForm03()">Imagination Abyss</button>
+          <button class="button04" onclick="openForm04()">Inner Peace</button>
+          <button class="button05" onclick="openForm05()">Main</button>
+          <button class="button06" onclick="openForm06()">Modèles au repos</button>
+          <button class="button07" onclick="openForm07()">Modèles colorés</button>
+          <button class="button08" onclick="openForm08()">Modèle posée</button>
+          <button class="button09" onclick="openForm09()">Objet Vivant</button>
+          <button class="button10" onclick="openForm10()">Ombre d'un modèle</button>
+        <button class="button11" onclick="openForm11()"> Out of the Frame</button>
+        <button class="button12" onclick="openForm12()">Posing</button>
+        <button class="button13" onclick="openForm13()">Recroquevillement</button>
+        <button class="button14" onclick="openForm14()">Silent Loneliness</button>
+        <button class="button15" onclick="openForm15()">Tambourin</button>
+        <button class="button16" onclick="openForm16()">Visage en facettes</button>
+        <button class="button17" onclick="openForm17()">Visite des ruines</button>
+        <button class="button18" onclick="openForm18()">Warmth and Wonder</button>
       </div>
+      <div class="popup" id="myForm01">
+        <form action="/action_page.php" class="form-container">
+          <button type="button" class="btn cancel" onclick="closeForm01()">Close</button>
+          <p>Poster project made during the course CART214. The poster claims women’s objectification in society and promotes the independence of their bodies.</p>
+          <div class="mySlides">
+            <img src="../images/autoportrait.jpg" alt="The Woods">
+          </div>
+        
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        </form>
+          </div>
+      </div>
+      <div class="popup" id="myForm02">
+        <form action="/action_page.php" class="form-container">
+          <button type="button" class="btn cancel" onclick="closeForm02()">Close</button>
+          <p>Final project made during the course CART211. Based on the video Do You Remember MYSPACE? watched throughout the semester. Worked on web design, graphic design and coding.</p>
+          <div class="mySlides">
+         
+            <img src="../images/femme-violet.jpg">
+          </div>
+        
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </form>
+            </div>
+        </div>
+   
+      <div class="popup" id="myForm03">
+        <form action="/action_page.php" class="form-container">
+          <button type="button" class="btn cancel" onclick="closeForm03()">Close</button>
+          <p>Final project made during the course CART214. The fictional game menu was made based on a game project I made during the course CART253.</p>
+          <div class="mySlides">
+          
+            <img src="../images/imagination-abyss.jpg" alt="The Woods">
+          </div>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </form>
+            </div>
+        </div>
+      <div class="popup" id="myForm04">
+        <form action="/action_page.php" class="form-container"> 
+          <button type="button" class="btn cancel" onclick="closeForm04()">Close</button>
+        <p>Abstract self-portrait made during the course CART214. Representing my perception of my mind.</p>
+        <div class="mySlides">
+      
+          <img src="../images/inner-peace.jpg" alt="The Woods">
+        </div>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      </form>
+        </div>
+        <div class="popup" id="myForm05">
+          <form action="/action_page.php" class="form-container"> 
+            <button type="button" class="btn cancel" onclick="closeForm05()">Close</button>
+          <p>Abstract self-portrait made during the course CART214. Representing my perception of my mind.</p>
+          <div class="mySlides">
+       
+            <img src="../images/main.jpg" alt="The Woods">
+          </div>
+    
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+        </form>
+          </div>
+          <div class="popup" id="myForm06">
+            <form action="/action_page.php" class="form-container"> 
+              <button type="button" class="btn cancel" onclick="closeForm06()">Close</button>
+            <p>Abstract self-portrait made during the course CART214. Representing my perception of my mind.</p>
+            <div class="mySlides">
+      
+              <img src="../images/modeles-repos.jpg" alt="The Woods">
+            </div>
+     
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          </form>
+            </div>
+            <div class="popup" id="myForm01">
+              <form action="/action_page.php" class="form-container">
+                <button type="button" class="btn cancel" onclick="closeForm01()">Close</button>
+                <p>Poster project made during the course CART214. The poster claims women’s objectification in society and promotes the independence of their bodies.</p>
+                <div class="mySlides">
+            
+                  <img src="../images/modeles-colores.jpg" alt="The Woods">
+                </div>
+
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              </form>
+                </div>
+            </div>
+            <div class="popup" id="myForm02">
+              <form action="/action_page.php" class="form-container">
+                <button type="button" class="btn cancel" onclick="closeForm02()">Close</button>
+                <p>Final project made during the course CART211. Based on the video Do You Remember MYSPACE? watched throughout the semester. Worked on web design, graphic design and coding.</p>
+                <div class="mySlides">
+                  <img src="../images/modele-posee.jpg">
+                </div>
+          
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                </form>
+                  </div>
+              </div>
+         
+            <div class="popup" id="myForm03">
+              <form action="/action_page.php" class="form-container">
+                <button type="button" class="btn cancel" onclick="closeForm03()">Close</button>
+                <p>Final project made during the course CART214. The fictional game menu was made based on a game project I made during the course CART253.</p>
+                <div class="mySlides">
+              
+                  <img src="../images/objet-vivant.jpg" alt="The Woods">
+                </div>
+    
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                </form>
+                  </div>
+              </div>
+            <div class="popup" id="myForm04">
+              <form action="/action_page.php" class="form-container"> 
+                <button type="button" class="btn cancel" onclick="closeForm04()">Close</button>
+              <p>Abstract self-portrait made during the course CART214. Representing my perception of my mind.</p>
+              <div class="mySlides">
+            
+                <img src="../images/ombre-modele.jpg" alt="The Woods">
+              </div>
+            
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+            </form>
+              </div>
+              <div class="popup" id="myForm05">
+                <form action="/action_page.php" class="form-container"> 
+                  <button type="button" class="btn cancel" onclick="closeForm05()">Close</button>
+                <p>Abstract self-portrait made during the course CART214. Representing my perception of my mind.</p>
+                <div class="mySlides">
+                
+                  <img src="../images/out-of-the-frame.jpg" alt="The Woods">
+                </div>
+              
+                
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              </form>
+                </div>
+                <div class="popup" id="myForm06">
+                  <form action="/action_page.php" class="form-container"> 
+                    <button type="button" class="btn cancel" onclick="closeForm06()">Close</button>
+                  <p>Abstract self-portrait made during the course CART214. Representing my perception of my mind.</p>
+                  <div class="mySlides">
+                  
+                    <img src="../images/posing.jpg" alt="The Woods">
+                  </div>
+                
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                </form>
+                  </div>
+                  <div class="popup" id="myForm01">
+                    <form action="/action_page.php" class="form-container">
+                      <button type="button" class="btn cancel" onclick="closeForm01()">Close</button>
+                      <p>Poster project made during the course CART214. The poster claims women’s objectification in society and promotes the independence of their bodies.</p>
+                      <div class="mySlides">
+                        
+                        <img src="../images/recroquevillement.jpg" alt="The Woods">
+                      </div>
+                    
+                
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </form>
+                      </div>
+                  </div>
+                  <div class="popup" id="myForm02">
+                    <form action="/action_page.php" class="form-container">
+                      <button type="button" class="btn cancel" onclick="closeForm02()">Close</button>
+                      <p>Final project made during the course CART211. Based on the video Do You Remember MYSPACE? watched throughout the semester. Worked on web design, graphic design and coding.</p>
+                      <div class="mySlides">
+                       
+                        <img src="../images/silent-loneliness.jpg">
+                      </div>
+                    
+                    
+                        <div class="caption-container">
+                          <p id="caption"></p>
+                        </div>
+                      </form>
+                        </div>
+                    </div>
+               
+                  <div class="popup" id="myForm03">
+                    <form action="/action_page.php" class="form-container">
+                      <button type="button" class="btn cancel" onclick="closeForm03()">Close</button>
+                      <p>Final project made during the course CART214. The fictional game menu was made based on a game project I made during the course CART253.</p>
+                      <div class="mySlides">
+                      
+                        <img src="../images/tambourin.jpg" alt="The Woods">
+                      </div>
+                  
+                      
+                        <div class="caption-container">
+                          <p id="caption"></p>
+                        </div>
+                      </form>
+                        </div>
+                    </div>
+                  <div class="popup" id="myForm04">
+                    <form action="/action_page.php" class="form-container"> 
+                      <button type="button" class="btn cancel" onclick="closeForm04()">Close</button>
+                    <p>Abstract self-portrait made during the course CART214. Representing my perception of my mind.</p>
+                    <div class="mySlides">
+                  
+                      <img src="../images/visage-facettes.jpg" alt="The Woods">
+                    </div>
+                  
+                    <div class="caption-container">
+                      <p id="caption"></p>
+                    </div>
+                  </form>
+                    </div>
+                    <div class="popup" id="myForm05">
+                      <form action="/action_page.php" class="form-container"> 
+                        <button type="button" class="btn cancel" onclick="closeForm05()">Close</button>
+                      <p>Abstract self-portrait made during the course CART214. Representing my perception of my mind.</p>
+                      <div class="mySlides">
+                       
+                        <img src="../images/visite-ruines.jpg" alt="The Woods">
+                      </div>
+                    
+                    
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </form>
+                      </div>
+                      <div class="popup" id="myForm06">
+                        <form action="/action_page.php" class="form-container"> 
+                          <button type="button" class="btn cancel" onclick="closeForm06()">Close</button>
+                        <p>Abstract self-portrait made during the course CART214. Representing my perception of my mind.</p>
+                        <div class="mySlides">
+                        
+                          <img src="../images/warmth-wonder.jpg" alt="The Woods">
+                        </div>
+                      
+                        <div class="caption-container">
+                          <p id="caption"></p>
+                        </div>
+                      </form>
+                        </div>
+      <script>
+        function openForm01() {
+          document.getElementById("myForm01").style.display = "block";
+        }
+        
+        function closeForm01() {
+          document.getElementById("myForm01").style.display = "none";
+        }
+        function openForm02() {
+          document.getElementById("myForm02").style.display = "block";
+        }
+        
+        function closeForm02() {
+          document.getElementById("myForm02").style.display = "none";
+        }
+        function openForm03() {
+          document.getElementById("myForm03").style.display = "block";
+        }
+        
+        function closeForm03() {
+          document.getElementById("myForm03").style.display = "none";
+        }
+        function openForm04() {
+          document.getElementById("myForm04").style.display = "block";
+        }
+        
+        function closeForm04() {
+          document.getElementById("myForm04").style.display = "none";
+        }
+        function openForm05() {
+          document.getElementById("myForm05").style.display = "block";
+        }
+        
+        function closeForm05() {
+          document.getElementById("myForm05").style.display = "none";
+        }
+        function openForm06() {
+          document.getElementById("myForm06").style.display = "block";
+        }
+        
+        function closeForm06() {
+          document.getElementById("myForm06").style.display = "none";
+        }
+        function openForm07() {
+          document.getElementById("myForm01").style.display = "block";
+        }
+        
+        function closeForm07() {
+          document.getElementById("myForm01").style.display = "none";
+        }
+        function openForm08() {
+          document.getElementById("myForm02").style.display = "block";
+        }
+        
+        function closeForm08() {
+          document.getElementById("myForm02").style.display = "none";
+        }
+        function openForm09() {
+          document.getElementById("myForm03").style.display = "block";
+        }
+        
+        function closeForm09() {
+          document.getElementById("myForm03").style.display = "none";
+        }
+        function openForm10() {
+          document.getElementById("myForm04").style.display = "block";
+        }
+        
+        function closeForm10() {
+          document.getElementById("myForm04").style.display = "none";
+        }
+        function openForm11() {
+          document.getElementById("myForm05").style.display = "block";
+        }
+        
+        function closeForm11() {
+          document.getElementById("myForm05").style.display = "none";
+        }
+        function openForm12() {
+          document.getElementById("myForm06").style.display = "block";
+        }
+        
+        function closeForm12() {
+          document.getElementById("myForm06").style.display = "none";
+        }
+        function openForm13() {
+          document.getElementById("myForm01").style.display = "block";
+        }
+        
+        function closeForm13() {
+          document.getElementById("myForm01").style.display = "none";
+        }
+        function openForm14() {
+          document.getElementById("myForm02").style.display = "block";
+        }
+        
+        function closeForm14() {
+          document.getElementById("myForm02").style.display = "none";
+        }
+        function openForm15() {
+          document.getElementById("myForm03").style.display = "block";
+        }
+        
+        function closeForm15() {
+          document.getElementById("myForm03").style.display = "none";
+        }
+        function openForm16() {
+          document.getElementById("myForm04").style.display = "block";
+        }
+        
+        function closeForm16() {
+          document.getElementById("myForm04").style.display = "none";
+        }
+        function openForm17() {
+          document.getElementById("myForm05").style.display = "block";
+        }
+        
+        function closeForm17() {
+          document.getElementById("myForm05").style.display = "none";
+        }
+        function openForm18() {
+          document.getElementById("myForm06").style.display = "block";
+        }
+        
+        function closeForm18() {
+          document.getElementById("myForm06").style.display = "none";
+        }
+        let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+        </script>
+      </body>
       </body>
     <footer>
     
