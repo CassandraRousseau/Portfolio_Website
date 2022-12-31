@@ -75,7 +75,7 @@
         </form>
           </div>
       </div>
-      <div class="popup" id="myForm02">
+      <div class="popup" id="myForm04">
         <form action="/action_page.php" class="form-container">
           <button type="button" class="btn cancel" onclick="closeForm02()">Close</button>
           <p>Final project made during the course CART211. Based on the video Do You Remember MYSPACE? watched throughout the semester. Worked on web design, graphic design and coding.</p>
@@ -95,7 +95,7 @@
           </form>
             </div>
         </div>
-        <div class="popup" id="myForm02">
+        <div class="popup" id="myForm05">
           <form action="/action_page.php" class="form-container">
             <button type="button" class="btn cancel" onclick="closeForm02()">Close</button>
             <p>Final project made during the course CART211. Based on the video Do You Remember MYSPACE? watched throughout the semester. Worked on web design, graphic design and coding.</p>
@@ -115,7 +115,7 @@
             </form>
               </div>
           </div>
-      <div class="popup" id="myForm02">
+      <div class="popup" id="myForm06">
         <form action="/action_page.php" class="form-container">
           <button type="button" class="btn cancel" onclick="closeForm02()">Close</button>
           <p>Final project made during the course CART211. Based on the video Do You Remember MYSPACE? watched throughout the semester. Worked on web design, graphic design and coding.</p>
@@ -131,7 +131,7 @@
             <div class="mySlides">
               <div class="numbertext">4 / 4</div>
               <video width="100%" controls>
-                <source src="../images/scenes-from-74-years.mp4" type="video/mp4">
+                <source src="../images/scenes-74-years.mp4" type="video/mp4">
               </video>
             </div>
             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -171,6 +171,20 @@
         }
         
         function closeForm04() {
+          document.getElementById("myForm04").style.display = "none";
+        }
+        function openForm05() {
+          document.getElementById("myForm03").style.display = "block";
+        }
+        
+        function closeForm05() {
+          document.getElementById("myForm03").style.display = "none";
+        }
+        function openForm06() {
+          document.getElementById("myForm04").style.display = "block";
+        }
+        
+        function closeForm06() {
           document.getElementById("myForm04").style.display = "none";
         }
 

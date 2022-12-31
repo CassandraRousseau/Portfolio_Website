@@ -173,6 +173,7 @@
     left:25%;
     width:100%;
     height:100%;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
   /* Add styles to the form container */
@@ -291,3 +292,24 @@
   .demo:hover {
     opacity: 1;
   }
+  /* Add Animation */
+@-webkit-keyframes slideIn {
+  from {top: -300px; opacity: 0} 
+  to {top: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
