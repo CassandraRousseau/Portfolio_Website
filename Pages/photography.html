@@ -45,9 +45,9 @@
         <form action="/action_page.php" class="form-container">
           <button type="button" class="btn cancel" onclick="closeForm02()">Close</button>
           <p>Final project made during the course CART211. Based on the video Do You Remember MYSPACE? watched throughout the semester. Worked on web design, graphic design and coding.</p>
-            <div class="mySlides">
+           
               <img src="../images/nails.JPG" alt="The Woods">
-            </div>
+           
             <div class="caption-container">
               <p id="caption"></p>
             </div>
@@ -58,31 +58,31 @@
         <form action="/action_page.php" class="form-container">
           <button type="button" class="btn cancel" onclick="closeForm03()">Close</button>
           <p>Poster project made during the course CART214. The poster claims women’s objectification in society and promotes the independence of their bodies.</p>
-          <div class="mySlides">
+          <div class="mySlides02">
             <div class="numbertext">1 / 5</div>
             <img src="../images/neon01.JPG" alt="The Woods">
           </div>
         
-          <div class="mySlides">
+          <div class="mySlides02">
             <div class="numbertext">2 / 5</div>
             <img src="../images/neon02.JPG">
           </div>
         
-          <div class="mySlides">
+          <div class="mySlides02">
             <div class="numbertext">3 / 5</div>
             <img src="../images/neon03.JPG" >
           </div>
-          <div class="mySlides">
+          <div class="mySlides02">
             <div class="numbertext">4 / 5</div>
             <img src="../images/neon04.JPG">
           </div>
         
-          <div class="mySlides">
+          <div class="mySlides02">
             <div class="numbertext">5 / 5</div>
             <img src="../images/neon05.JPG" >
           </div>
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
+          <a class="prev" onclick="plusSlides02(-1)">❮</a>
+          <a class="next" onclick="plusSlides02(1)">❯</a>
         
           <div class="caption-container">
             <p id="caption"></p>
@@ -94,26 +94,26 @@
         <form action="/action_page.php" class="form-container"> 
           <button type="button" class="btn cancel" onclick="closeForm04()">Close</button>
         <p>Abstract self-portrait made during the course CART214. Representing my perception of my mind.</p>
-        <div class="mySlides">
+        <div class="mySlides03">
           <div class="numbertext">1 / 4</div>
           <img src="../images/parc-delaisse02.jpg" alt="The Woods">
         </div>
       
-        <div class="mySlides">
+        <div class="mySlides03">
           <div class="numbertext">2 / 4</div>
           <img src="../images/parc-delaisse03.jpg">
         </div>
       
-        <div class="mySlides">
+        <div class="mySlides03">
           <div class="numbertext">3 / 4</div>
           <img src="../images/parc-delaisse04.jpg" >
         </div>
-        <div class="mySlides">
+        <div class="mySlides03">
           <div class="numbertext">4 / 4</div>
           <img src="../images/parc-delaisse.jpg">
         </div>
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+        <a class="prev" onclick="plusSlides03(-1)">❮</a>
+        <a class="next" onclick="plusSlides03(1)">❯</a>
       
         <div class="caption-container">
           <p id="caption"></p>
@@ -151,7 +151,11 @@
         }
 
         let slideIndex = 1;
+        let slideIndex02 = 1;
+        let slideIndex03 = 1;
 showSlides(slideIndex);
+showSlides02(slideIndex02);
+showSlides03(slideIndex03);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -160,24 +164,64 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+function plusSlides02(n) {
+  showSlides02(slideIndex02 += n);
+}
+
+function currentSlide02(n) {
+  showSlides02(slideIndex02 = n);
+}
+function plusSlides03(n) {
+  showSlides03(slideIndex03 += n);
+}
+
+function currentSlide03(n) {
+  showSlides03(slideIndex03 = n);
+}
 
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
+  
   let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+ 
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  
 }
+function showSlides02(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides02");
+  
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex02 = 1}
+  if (n < 1) {slideIndex02 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex02-1].style.display = "block";
+  
+}
+function showSlides03(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides03");
+ 
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex03 = 1}
+  if (n < 1) {slideIndex03 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex03-1].style.display = "block";
+ 
+}
+
         </script>
       </body>
     <footer>

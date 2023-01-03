@@ -62,9 +62,9 @@
             <form action="/action_page.php" class="form-container">
               <button type="button" class="btn cancel" onclick="closeForm03()">Close</button>
               <p>Final project made during the course CART214. The fictional game menu was made based on a game project I made during the course CART253.</p>
-          <div class="mySlides">
+     
             <img src="../images/fading.jpg" alt="The Woods">
-          </div>
+       
             <div class="caption-container">
               <p id="caption"></p>
             </div>
@@ -75,9 +75,9 @@
         <form action="/action_page.php" class="form-container">
           <button type="button" class="btn cancel" onclick="closeForm04()">Close</button>
           <p>Final project made during the course CART211. Based on the video Do You Remember MYSPACE? watched throughout the semester. Worked on web design, graphic design and coding.</p>
-            <div class="mySlides">
+      
               <img src="../images/flames.jpg" alt="The Woods">
-            </div>
+        
             <div class="caption-container">
               <p id="caption"></p>
             </div>
@@ -88,9 +88,9 @@
         <form action="/action_page.php" class="form-container">
           <button type="button" class="btn cancel" onclick="closeForm05()">Close</button>
           <p>Poster project made during the course CART214. The poster claims women’s objectification in society and promotes the independence of their bodies.</p>
-          <div class="mySlides">
+        
             <img src="../images/good-girl.jpg" alt="The Woods">
-          </div>
+        
         <div class="caption-container">
               <p id="caption"></p>
             </div>
@@ -101,9 +101,9 @@
             <form action="/action_page.php" class="form-container">
               <button type="button" class="btn cancel" onclick="closeForm06()">Close</button>
               <p>Poster project made during the course CART214. The poster claims women’s objectification in society and promotes the independence of their bodies.</p>
-          <div class="mySlides">
+         
             <img src="../images/pays-en-cendres.jpg">
-          </div>
+    
           <div class="caption-container">
             <p id="caption"></p>
           </div>
@@ -114,28 +114,28 @@
             <form action="/action_page.php" class="form-container">
               <button type="button" class="btn cancel" onclick="closeForm07()">Close</button>
               <p>Poster project made during the course CART214. The poster claims women’s objectification in society and promotes the independence of their bodies.</p>
-              <div class="mySlides">
+              <div class="mySlides02">
                 <div class="numbertext">1 / 5</div>
                 <img src="../images/skin01.jpg">
               </div>
-              <div class="mySlides">
+              <div class="mySlides02">
                 <div class="numbertext">2 / 5</div>
                 <img src="../images/skin02.jpg">
               </div>
-              <div class="mySlides">
+              <div class="mySlides02">
                 <div class="numbertext">3 / 5</div>
                 <img src="../images/skin03.jpg">
               </div>
-              <div class="mySlides">
+              <div class="mySlides02">
                 <div class="numbertext">4 / 5</div>
                 <img src="../images/skin04.jpg">
               </div>
-              <div class="mySlides">
+              <div class="mySlides02">
                 <div class="numbertext">5 / 5</div>
                 <img src="../images/skin05.jpg">
               </div>
-              <a class="prev" onclick="plusSlides(-1)">❮</a>
-              <a class="next" onclick="plusSlides(1)">❯</a>
+              <a class="prev" onclick="plusSlides02(-1)">❮</a>
+              <a class="next" onclick="plusSlides02(1)">❯</a>
           <div class="caption-container">
             <p id="caption"></p>
           </div>
@@ -146,9 +146,9 @@
         <form action="/action_page.php" class="form-container"> 
           <button type="button" class="btn cancel" onclick="closeForm08()">Close</button>
         <p>Abstract self-portrait made during the course CART214. Representing my perception of my mind.</p>
-        <div class="mySlides">
+     
           <img src="../images/tristesse-cachee.jpg" alt="The Woods">
-        </div>
+     
         <div class="caption-container">
           <p id="caption"></p>
         </div>
@@ -159,9 +159,9 @@
           <form action="/action_page.php" class="form-container"> 
             <button type="button" class="btn cancel" onclick="closeForm09()">Close</button>
           <p>Abstract self-portrait made during the course CART214. Representing my perception of my mind.</p>
-        <div class="mySlides">
+       
           <img src="../images/vibrant-mountain.jpg">
-        </div>
+       
         <div class="caption-container">
           <p id="caption"></p>
         </div>
@@ -236,9 +236,12 @@
         function closeForm09() {
           document.getElementById("myForm09").style.display = "none";
         }
-
         let slideIndex = 1;
+        let slideIndex02 = 1;
+    
 showSlides(slideIndex);
+showSlides02(slideIndex02);
+
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -247,24 +250,42 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+function plusSlides02(n) {
+  showSlides02(slideIndex02 += n);
+}
 
+function currentSlide02(n) {
+  showSlides02(slideIndex02 = n);
+}
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
+  
   let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+ 
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  
 }
+function showSlides02(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides02");
+  
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex02 = 1}
+  if (n < 1) {slideIndex02 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex02-1].style.display = "block";
+  
+}
+
         </script>
       </body>
     <footer>
