@@ -166,19 +166,31 @@
   .popup {
     display: none;
     position: fixed;
-    top: 0%;
-    bottom: 0%;
-    right: 25%;
-    left:25%;
+    z-index: 0; /* Sit on top */
+    top: 0;
     width:100%;
     height:100%;
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 1s;
   }
   
   /* Add styles to the form container */
   .form-container {
+    position: fixed;
+    top: 0;
+    bottom: 0%;
+    right: 25%;
+    left:25%;
     width:50%;
+    height:100%;
     background-color: white;
+    -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  animation-name: slideIn;
+  animation-duration: 1s
   }
   
   /* Set a style for the submit/login button */
@@ -291,16 +303,17 @@
   .demo:hover {
     opacity: 1;
   }
-  /* Add Animation */
+   /* Add Animation */
 @-webkit-keyframes slideIn {
-  from {top: -300px; opacity: 0} 
-  to {top: 0; opacity: 1}
+  from {top: 0%; opacity: 0} 
+  to {top: 10%; opacity: 1}
 }
 
 @keyframes slideIn {
-  from {top: -300px; opacity: 0}
-  to {top: 0; opacity: 1}
+  from {top: 0%; opacity: 0}
+  to {top: 10%; opacity: 1}
 }
+
 
 @-webkit-keyframes fadeIn {
   from {opacity: 0} 
